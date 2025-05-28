@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "vercel-build": "echo 'no build needed'"
+    "vercel-build": "tsc"
   },
   "dependencies": {
     "@vercel/node": "^5.2.0",
