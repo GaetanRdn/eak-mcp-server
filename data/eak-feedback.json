@@ -1,0 +1,10 @@
+[
+  {
+    "pattern": "Le nom de la méthode est trop générique",
+    "user_response": "Accepté : on a renommé 'handle' en 'handleUserLogin'."
+  },
+  {
+    "pattern": "Use-case manquant pour un appel API",
+    "user_response": "Refusé : ce n’est qu’un wrapper temporaire côté infra."
+  }
+]
