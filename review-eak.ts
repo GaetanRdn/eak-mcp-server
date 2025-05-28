@@ -5,6 +5,7 @@ import 'dotenv/config';
 
 const prId = process.env.PR_NUMBER || 'local';
 const togetherApiKey = process.env.TOGETHER_API_KEY;
+const mcpUrl = 'https://eak-mcp-server.vercel.app/api/context';
 
 if (!togetherApiKey) {
   console.error('TOGETHER_API_KEY is missing.');
@@ -17,7 +18,7 @@ const openai = new OpenAI({
 });
 
 async function run() {
-  const context = await fetch(`http://localhost:3000/context/code-review/github/${prId}`).then(res => res.json());
+  const context: any = await fetch(mcpUrl).then(res => res.json());
 
   const diff = execSync('git diff origin/main...HEAD', { encoding: 'utf-8' });
 

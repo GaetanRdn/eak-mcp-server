@@ -2,9 +2,12 @@
   "name": "eak-mcp-vercel",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "vercel-build": "echo 'no build needed'"
   },
   "dependencies": {
-    "@vercel/node": "^5.2.0"
+    "@vercel/node": "^5.2.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.103.0"
   }
 }
