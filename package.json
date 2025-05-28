@@ -1,18 +1,10 @@
 {
-  "name": "eak-mcp-together",
-  "version": "1.0.0",
+  "name": "eak-mcp-vercel",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch server.ts",
-    "review:test": "tsx review-eak.ts"
-  },
-  "devDependencies": {
-    "tsx": "^4.7.0"
+    "vercel-build": "echo 'no build needed'"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "openai": "^4.26.0",
-    "dotenv": "^16.4.5",
-    "express": "^5.1.0"
+    "@vercel/node": "^5.2.0"
   }
 }
